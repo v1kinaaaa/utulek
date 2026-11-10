@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SharkHeaven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shark Heaven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link" href="index.html">Domů</a>
+          <a class="nav-link" href="zvirata.html">Naši žraloci</a>
+          <a class="nav-link" href="kotata.html">Štěňata a Koťata</a>
+          <a class="nav-link" href="plemeno.html">Péče</a>
+          <a class="nav-link" href="kontakt.html">Kontakt/Rezervace</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div class="container my-5">
+<p class="fs-1 text-center ">Naše koťata</p>
+  <p class="fs-4 fst-italic text-center fw-light">V naší stanici
+<b>SharkHeaven</b> se specializujeme i na chov výběrových koťat.</p>
+  <div class="row g-4">
+    
+    <!-- Karta 1: Volný -->
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="position-relative">
+          <img src="images/kote1.jpg" class="card-img-top" alt="Orion">
+          <span class="position-absolute top-0 end-0 m-3 badge bg-success">Volný</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Orion</h4>
+          <p class="card-text text-muted mb-2">Samec</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 12. 09. 2026</li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+            <li><strong>Rodiče:</strong> <a href="#" class="text-decoration-none">🐈 × 🐈</a></li>
+          </ul>
+          <p class="card-text flex-grow-1">Mimořádně hravý, zvídavý a odvážný jedinec. Miluje kontakt s lidmi a aktivně vyhledává hračky.</p>
+          <a href="#" class="btn btn-outline-primary w-100 mt-auto">Zažádat o rezervaci</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karta 2: Rezervace -->
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="position-relative">
+          <img src="images/kote2.jpg" class="card-img-top" alt="Ophelia">
+          <span class="position-absolute top-0 end-0 m-3 badge bg-warning text-dark">Rezervace (v jednání)</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Ophelia</h4>
+          <p class="card-text text-muted mb-2">Samička</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozená:</strong> 12. 09. 2026</li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+            <li><strong>Rodiče:</strong> <a href="#" class="text-decoration-none">🐈 × 🐈</a></li>
+          </ul>
+          <p class="card-text flex-grow-1">Jemná, mazlivá a vnímavá samička s klidnější povahou. Ráda pozoruje okolí z vyvýšených míst.</p>
+          <a href="#" class="btn btn-outline-warning w-100 mt-auto">Zažádat o náhradníka</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Karta 3: V novém domově -->
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm border-0 opacity-75">
+        <div class="position-relative">
+          <img src="images/kote3.jpg" class="card-img-top" alt="Olympus">
+          <span class="position-absolute top-0 end-0 m-3 badge bg-secondary">V novém domově</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-muted">Olympus</h4>
+          <p class="card-text text-muted mb-2">Samec</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 12. 09. 2026</li>
+            <li><strong>K odběru:</strong> Již odešel</li>
+            <li><strong>Rodiče:</strong> <a href="#" class="text-decoration-none">🐈 × 🐈</a></li>
+          </ul>
+          <p class="card-text flex-grow-1 text-muted">Vyrovnaný, sebevědomý jedinec s vynikajícím exteriérem. Úspěšně v nové rodině.</p>
+          <button class="btn btn-secondary w-100 mt-auto" disabled>Zadáno</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- Levé menu (Scrollspy navigace) -->
+    <div class="col-12 col-md-4 mb-4 mb-md-0">
+      <div id="reproduction-scrollspy" class="list-group sticky-top" style="top: 1rem;">
+        <a class="list-group-item list-group-item-action active" href="#sec-planned-litters">
+       Plánované vrhy
+        </a>
+        <a class="list-group-item list-group-item-action" href="#sec-included-price">
+           Co je v ceně
+        </a>
+        <a class="list-group-item list-group-item-action" href="#sec-adoption-process">
+           Jak probíhá odběr
+        </a>
+        <a class="list-group-item list-group-item-action" href="#sec-faq">
+           Často kladené dotazy (FAQ)
+        </a>
+      </div>
+    </div>
+
+    <!-- Pravý obsahový panel -->
+    <div class="col-12 col-md-8">
+      <div data-bs-spy="scroll" data-bs-target="#reproduction-scrollspy" data-bs-smooth-scroll="true" class="scrollspy-example p-3 border rounded-3 bg-light" tabindex="0" style="height: 550px; overflow-y: scroll;">
+        
+        <!-- 1. Plánované vrhy -->
+        <h4 id="sec-planned-litters" class="text-primary border-bottom pb-2 mb-3">📅 Plánované vrhy</h4>
+        
+        <!-- Pár 1 -->
+        <div class="card mb-3 shadow-sm border-0">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">Vrh „P“ – Jaro 2027</h5>
+              <span class="badge bg-info text-dark">Krytí: Leden/Únor 2027</span>
+            </div>
+            <p class="mb-1"><strong>Rodiče:</strong> Samec <em>Barnabáš</em> × Samička <em>Freya</em></p>
+            <p class="mb-2"><strong>Předpokládaný odběr:</strong> Květen 2027</p>
+            <p class="card-text text-muted small"><strong>Očekávané vlastnosti:</strong> Vynikající exteriér, vyrovnaná a přátelská povaha, silná imunita a minimální koeficient inbreedingu.</p>
+            <a href="#waitlist-form" class="btn btn-primary btn-sm">Přidat se na čekací listinu</a>
+          </div>
+        </div>
+
+        <!-- Pár 2 -->
+        <div class="card mb-3 shadow-sm border-0">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">Vrh „Q“ – Léto 2027</h5>
+              <span class="badge bg-info text-dark">Krytí: Duben/Květen 2027</span>
+            </div>
+            <p class="mb-1"><strong>Rodiče:</strong> Samec <em>Atlas</em> × Samička <em>Aura</em></p>
+            <p class="mb-2"><strong>Předpokládaný odběr:</strong> Srpen 2027</p>
+            <p class="card-text text-muted small"><strong>Očekávané vlastnosti:</strong> Kontrasní zbarvení, hravá a kontaktní štěňata/koťata se skvělým předpokladem pro chov i výstavy.</p>
+            <a href="#waitlist-form" class="btn btn-primary btn-sm">Přidat se na čekací listinu</a>
+          </div>
+        </div>
+
+        <!-- Pár 3 -->
+        <div class="card mb-4 shadow-sm border-0">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">Vrh „R“ – Podzim 2027</h5>
+              <span class="badge bg-info text-dark">Krytí: Červenec/Srpen 2027</span>
+            </div>
+            <p class="mb-1"><strong>Rodiče:</strong> Samec <em>Nero</em> × Samička <em>Ophelia</em></p>
+            <p class="mb-2"><strong>Předpokládaný odběr:</strong> Říjen 2027</p>
+            <p class="card-text text-muted small"><strong>Očekávané vlastnosti:</strong> Sebevědomí jedinci s vysokou inteligencí a zvídavostí po výstavně úspěšných rodičích.</p>
+            <a href="#waitlist-form" class="btn btn-primary btn-sm">Přidat se na čekací listinu</a>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- 2. Co je v ceně -->
+        <h4 id="sec-included-price" class="text-primary border-bottom pb-2 mb-3">🎁 Co je v ceně mláděte</h4>
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-md-4">
+            <div class="p-3 bg-white text-center rounded shadow-sm h-100">
+              <div class="fs-3">🏷️</div>
+              <strong class="d-block mt-2">ISO Čip</strong>
+              <small class="text-muted">Aplikovaný čip + zápis v registru</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="p-3 bg-white text-center rounded shadow-sm h-100">
+              <div class="fs-3">💉</div>
+              <strong class="d-block mt-2">Očkování</strong>
+              <small class="text-muted">Kompletní vakcinace dle věku</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="p-3 bg-white text-center rounded shadow-sm h-100">
+              <div class="fs-3">📘</div>
+              <strong class="d-block mt-2">EuroPas</strong>
+              <small class="text-muted">Mezinárodní očkovací průkaz</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-6">
+            <div class="p-3 bg-white text-center rounded shadow-sm h-100">
+              <div class="fs-3">🎒</div>
+              <strong class="d-block mt-2">Startovací balíček</strong>
+              <small class="text-muted">Krmivo na prvních 14 dní, dečka s vůní domova a oblíbená hračka</small>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 bg-white text-center rounded shadow-sm h-100">
+              <div class="fs-3">🤝</div>
+              <strong class="d-block mt-2">Chovatelský servis</strong>
+              <small class="text-muted">Doživotní poradenství s chovem, výživou a výchovou 24/7 zdarma</small>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- 3. Jak probíhá odběr -->
+        <h4 id="sec-adoption-process" class="text-primary border-bottom pb-2 mb-3">🐾 Jak probíhá odběr (3 kroky)</h4>
+        <div class="vstack gap-3 mb-4">
+          <div class="d-flex align-items-start bg-white p-3 rounded shadow-sm">
+            <span class="badge bg-primary fs-5 me-3 rounded-circle px-3 py-2">1</span>
+            <div>
+              <h6 class="mb-1 fw-bold">Kontakt & Rezervace</h6>
+              <p class="mb-0 text-muted small">Vyplníte rezervační formulář. Probereme vaše představy a vybereme nejvhodnější mládě či vrh.</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start bg-white p-3 rounded shadow-sm">
+            <span class="badge bg-primary fs-5 me-3 rounded-circle px-3 py-2">2</span>
+            <div>
+              <h6 class="mb-1 fw-bold">Návštěva & Složení zálohy</h6>
+              <p class="mb-0 text-muted small">Osobní setkání v naší stanici, seznámení s mláďaty a podpis rezervační smlouvy se zálohou (30 %).</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start bg-white p-3 rounded shadow-sm">
+            <span class="badge bg-primary fs-5 me-3 rounded-circle px-3 py-2">3</span>
+            <div>
+              <h6 class="mb-1 fw-bold">Odběr & Trvalá podpora</h6>
+              <p class="mb-0 text-muted small">Vyzvednutí mláděte s pasem, PP a výbavou. Váš kontakt s námi předáním nekončí – pomáháme i dále.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- 4. FAQ -->
+        <h4 id="sec-faq" class="text-primary border-bottom pb-2 mb-3">❓ Často kladené dotazy (FAQ)</h4>
+        <div class="accordion accordion-flush" id="faqAccordion">
+          <div class="accordion-item bg-white rounded mb-2 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                💰 Jaká je cena a způsob platby?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted small">
+                Cena se odvíjí od konkrétního spojení a určení mláděte (mazlíček vs. chov). Při rezervaci se hradí 30% záloha, zbytek částky se doplatí při osobním převzetí zvířete.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-white rounded mb-2 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                🚗 Jak probíhá doprava?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted small">
+                Upřednostňujeme osobní odběr u nás ve stanici. Pokud to není možné, lze využít certifikovanou přepravní službu zaměřenou na bezpečný transport zvířat.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item bg-white rounded mb-2 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                🏠 Co připravit na první dny?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted small">
+                Předem vám zašleme seznam doporučené výbavy: pelíšek/přepravka, misky na vodu a krmivo, základní hygienické potřeby a toaleta.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SharkHeaven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shark Heaven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link" href="index.html">Domů</a>
+          <a class="nav-link" href="zvirata.html">Naši žraloci</a>
+          <a class="nav-link" href="kotata.html">Štěňata a Koťata</a>
+          <a class="nav-link" href="plemeno.html">Péče</a>
+          <a class="nav-link" href="kontakt.html">Kontakt/Rezervace</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5 pt-3">
+<p class="fs-1 text-center ">O našem chovu a vývěru jedinců</p>
+<p class="fs-4 fst-italic text-center fw-light">V naší stanici
+<b>SharkHeaven</b> se specializujeme na etický chov, udržitelnou reprodukci a ochranu genofondu žraloků.</p>
+</div>
+<div class="d-flex flex-column justify-content-center align-items-center mt-4">
+ <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Více   
+</button>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 450px;">
+<div class="offcanvas-header">
+ <h5 class="offcanvas-title" id="offcanvasExampleLabel">SharkHeaven</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <div>
+ Vyberte požadovanou sekci z nabídky níže pro zobrazení více informací.
+ </div>
+<div class="dropdown mt-3">
+ <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+ Vybrat
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#collapseAction1" aria-expanded="false" aria-controls="collapseAction1">
+            O chovu & výběru
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#collapseAction2" aria-expanded="false" aria-controls="collapseAction2">
+           Standard péče
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#collapseAction3" aria-expanded="false" aria-controls="collapseAction3">
+          Zdravotní testy
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="accordion mt-3" id="sharkAccordion">
+      <div class="accordion-item border-0">
+        <div id="collapseAction1" class="accordion-collapse collapse" data-bs-parent="#sharkAccordion">
+          <div class="card card-body bg-light text-dark p-3"> 
+         <p class="fs-5 fw-bold text-center mb-3">Jak vybíráme jedince</p>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="card border-0 shadow-sm p-2">
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-primary mb-2">🧬 Genetika</h6>
+                    <p class="card-text text-muted small mb-0">Přísně sledujeme příbuznost a vyvíjíme linie s minimálním koeficientem inbreedingu (COI).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card border-0 shadow-sm p-2">
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-success mb-2">💪 Vitalita</h6>
+                    <p class="card-text text-muted small mb-0">Do chovu zařazujeme pouze jedince s prokazatelnou imunitní stabilitou a klidnou povahou.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card border-0 shadow-sm p-2">
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-info mb-2">📜 Certifikace</h6>
+                    <p class="card-text text-muted small mb-0">Všechna zvířata plně odpovídají mezinárodním standardům EAZA a CITES.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <div id="collapseAction2" class="accordion-collapse collapse" data-bs-parent="#sharkAccordion">
+          <div class="card card-body bg-light text-dark p-3">
+            <p class="fs-4 fw-bold text-center mb-3">Standard péče</p>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="card border-0 shadow-sm p-2">
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-primary mb-2">Špičková technologie</h6>
+                    <p class="card-text text-muted small mb-0">Uzavřené cirkulační systémy (RAS) s automatickým 24/7 monitoringem salinity, teploty a filtrace.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card border-0 shadow-sm p-2">
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-success mb-2">Výživa na míru</h6>
+                    <p class="card-text text-muted small mb-0">Čerstvá potrava v lidské kvalitě doplněná o nezbytné vitamíny a taurin, podávaná formou cíleného tréninku (target feeding).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item border-0">
+        <div id="collapseAction3" class="accordion-collapse collapse" data-bs-parent="#sharkAccordion">
+          <div class="card card-body bg-light text-dark p-3">
+            <p class="fs-4 fw-bold text-center mb-3">Pravidelné zdravotní testy</p>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="p-3 bg-white rounded-3 border-start border-4 border-danger shadow-sm">
+                  <h6 class="fw-bold text-danger mb-1">🩸 Krevní testy & biochemie</h6>
+                  <p class="text-muted small mb-0">Provádíme pravidelně <strong>každé 3 měsíce</strong> pro důkladnou kontrolu vnitřního prostředí organismu.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="p-3 bg-white rounded-3 border-start border-4 border-primary shadow-sm">
+                  <h6 class="fw-bold text-primary mb-1">🔍 USG vyšetření</h6>
+                  <p class="text-muted small mb-0">Důkladná kontrola orgánů probíhá <strong>semestrálně</strong> pro včasnou a efektivní prevenci.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="p-3 bg-white rounded-3 border-start border-4 border-success shadow-sm">
+                  <h6 class="fw-bold text-success mb-1">🦠 Parazitologické stěry</h6>
+                  <p class="text-muted small mb-0">Slouží jako <strong>měsíční preventivní screening</strong> pro zajištění stoprocentního zdraví.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+  </div>
+</div>
+</div>
+<div class="container my-5">
+<div class="row g-4 justify-content-center">
+ <div class="col-md-6 col-lg-5">
+<div class="card h-100 shadow-sm border-0">
+ <img src="images/cernaploutev.jpg" class="card-img-top" alt="cerno">
+ <div class="card-body p-4">
+<h5 class="card-title fw-bold">Žralok černoploutvý</h5>
+ <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Nero</h4>
+          <p class="card-text text-muted mb-2">🦈 / 🦈</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 14. 05. 2019</li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+          </ul>
+          <p class="card-text flex-grow-1">Dominantní, teritoriální, ale velmi zvídavý samčí jedinec. Skvěle reaguje na trénink cíleného krmení pomocí vizuálních terčů.</p>
+          <a href="#" class="btn btn-outline-primary w-100 mt-auto">Rodokmen(pdf)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-5">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="images/leopardi.jpg" class="card-img-top" alt="cerno">
+ <div class="card-body p-4">
+<h5 class="card-title fw-bold">Žralok leopardí</h5>
+ <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Freya</h4>
+          <p class="card-text text-muted mb-2">🦈 / 🦈</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 22. 09. 2020 </li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+          </ul>
+          <p class="card-text flex-grow-1">Mírná, společenská a velmi aktivní v nočních hodinách. Nevystavuje se stresovým reakcím.</p>
+          <a href="#" class="btn btn-outline-primary w-100 mt-auto">Rodokmen(pdf)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-5">
+
+      <div class="card h-100 shadow-sm border-0">
+
+        <img src="images/zebrovity.jpg" class="card-img-top" alt="cerno">
+ <div class="card-body p-4">
+<h5 class="card-title fw-bold">Žralok zebrovitý</h5>
+ <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Barnabáš</h4>
+          <p class="card-text text-muted mb-2">🦈 / 🦈</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 03. 02. 2018 </li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+          </ul>
+          <p class="card-text flex-grow-1"> Mimořádně klidný a mírný bentický žralok. Většinu dne odpočívá na písčitém dně. Má velmi přátelský vztah k ošetřovatelům.</p>
+          <a href="#" class="btn btn-outline-primary w-100 mt-auto">Rodokmen(pdf)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+ <div class="col-md-6 col-lg-5">
+ <div class="card h-100 shadow-sm border-0">
+  <img src="images/vouskaty.jpg" class="card-img-top" alt="cerno">
+ <div class="card-body p-4">
+<h5 class="card-title fw-bold">Žralok vouskatý</h5>
+ <div class="card-body d-flex flex-column">
+          <h4 class="card-title text-primary">Atlass</h4>
+          <p class="card-text text-muted mb-2">🦈 / 🦈</p>
+          <ul class="list-unstyled small mb-3">
+            <li><strong>Narozen:</strong> 11. 11. 2021s</li>
+            <li><strong>K odběru:</strong> od 05. 12. 2026</li>
+          </ul>
+          <p class="card-text flex-grow-1">nteligentní, vysoce zvědavý a velmi silný jedinec. Baví ho interaktivní podněty a hlavolamy na krmivo. Vyžaduje pevnou strukturaci denního režimu a rozsáhlý prostor pro plavání.</p>
+          <a href="#" class="btn btn-outline-primary w-100 mt-auto">Rodokmen(pdf)</a>
+        </div>
+        </div>
+      </div>
+    </div>
+ <div class="container text-center mt-5 pt-3">
+  <p class="fs-2">Jak se u nás žije</p>
+  <div class="row">
+    <div class="col"><img src="images/zralok1.jpg" class="img-thumbnail" alt="zrali"></div>
+    <div class="col"><img src="images/zralok2.jpg" class="img-thumbnail" alt="..."></div>
+    <div class="col"><img src="images/zralok3.jpg" class="img-thumbnail" alt="..."></div>
+    <div class="col"><img src="images/zralok4.jpg" class="img-thumbnail" alt="..."></div>
+  </div>
+  <div class="row">
+    <div class="col-8"><img src="images/zralok6.jpg" class="img-thumbnail w-100 h-100 object-fit-cover" alt="..."></div>
+    <div class="col-4"><img src="images/zralok1.jpg" class="img-thumbnail" alt="..."></div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
